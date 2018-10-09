@@ -1,0 +1,51 @@
+[
+	{
+		"id": "nginx-1",
+		"label": "Nginx",
+		"type": "toggler",
+		"command_on": "wsl sudo service nginx start",
+		"command_off": "wsl sudo service nginx stop",
+		"detector": "wsl ps aux | findstr nginx"
+	},
+	{
+		"label": "Php",
+		"type":	"toggler",
+		"command_on": "wsl sudo service php7.2-fpm start",
+		"command_off": "wsl sudo service php7.2-fpm stop"
+	},
+	{
+		"label": "separator",
+		"type":	"separator"
+	},
+	{
+		"label": "VLC",
+		"type":	"launcher",
+		"command": "C:\\Program Files\\VideoLAN\\VLC\\vlc.exe"
+	},
+	{
+		"label": "uTorrent",
+		"type":	"launcher",
+		"command": "C:\\Users\\deepak\\AppData\\Roaming\\uTorrent\\uTorrent.exe"
+	},
+	{
+		"label": "separator",
+		"type":	"separator"
+	},
+	{
+		"label": "SSH",
+		"type": "submenu",
+		"submenu":	[ 
+			{
+				"label": "VLC",
+				"type":	"launcher",
+				"command": "C:\\Program Files\\VideoLAN\\VLC\\vlc.exe"
+			},
+			{
+				"label": "Chrome",
+				"type":	"launcher",
+				"command": "C:\\Program Files\\VideoLAN\\VLC\\vlc.exe"
+			}
+		]
+		
+	}
+]
