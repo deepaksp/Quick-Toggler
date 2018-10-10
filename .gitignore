@@ -1,5 +1,6 @@
 .DS_Store
 .idea
-dist/
+dist/*
+!dist/entries.json
 node_modules/
 thumbs.db

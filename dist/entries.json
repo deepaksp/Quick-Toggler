@@ -1,0 +1,97 @@
+[
+	{
+		"id": "nginx-1",
+		"label": "Nginx",
+		"type": "toggler",
+		"command_on": "wsl sudo service nginx start",
+		"command_off": "wsl sudo service nginx stop",
+		"detector": "wsl ps aux | findstr nginx"
+	},
+	{
+		"id": "php-1",
+		"label": "Php",
+		"type":	"toggler",
+		"command_on": "wsl sudo service php7.2-fpm start",
+		"command_off": "wsl sudo service php7.2-fpm stop",
+		"detector": "wsl ps aux | findstr php"
+	},
+	{
+		"id": "mysql-1",
+		"label": "MySQL",
+		"type":	"toggler",
+		"command_on": "wsl sudo service mysql start",
+		"command_off": "wsl sudo service mysql stop",
+		"detector": "wsl ps aux | findstr mysql"
+	},
+	{
+		"id": "redis-1",
+		"label": "Redis Server",
+		"type":	"toggler",
+		"command_on": "wsl sudo service redis-server start",
+		"command_off": "wsl sudo service redis-server stop",
+		"detector": "wsl ps aux | findstr redis-server"
+	},
+	{
+		"id": "local-1",
+		"label": "Start/Stop Local Server (All)",
+		"type":	"toggler",
+		"command_on": "wsl '/mnt/e/Cloud Backup/My Laptop/wsl/local-server.sh' start",
+		"command_off": "wsl '/mnt/e/Cloud Backup/My Laptop/wsl/local-server.sh' stop",
+		"detector": "wsl ps aux | findstr nginx",
+		"reload": "yes"
+	},
+	{
+		"label": "separator",
+		"type":	"separator"
+	},
+	{
+		"label": "Dexpot",
+		"type":	"launcher",
+		"command": "C:\\Program Files (x86)\\Dexpot\\dexpot.exe"
+	},
+	{
+		"label": "uTorrent",
+		"type":	"launcher",
+		"command": "C:\\Users\\deepak\\AppData\\Roaming\\uTorrent\\uTorrent.exe"
+	},
+	{
+		"label": "separator",
+		"type":	"separator"
+	},
+	{
+		"label": "SSH",
+		"type": "submenu",
+		"submenu":	[ 
+			{
+				"label": "SSH Success Class",
+				"type":	"launcher",
+				"launcherArgs": "cmd",
+				"command": "ssh sce"
+			},
+			{
+				"label": "SSH Folder",
+				"type":	"launcher",
+				"launcherArgs": "dir",
+				"command": "C:\\Users\\deepak\\.ssh"
+			}
+		]
+		
+	},
+	{
+		"label": "Bookmarks",
+		"type": "submenu",
+		"submenu":	[ 
+			{
+				"label": "Google",
+				"type":	"launcher",
+				"launcherArgs": "url",
+				"command": "http://google.com/"
+			}
+		]
+		
+	},
+	{
+		"label": "separator",
+		"type":	"separator"
+	}
+]
