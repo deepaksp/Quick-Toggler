@@ -1,0 +1,32 @@
+{
+  "name": "quick-toggler",
+  "productName": "Quick Toggler",
+  "description": "Tray App For Once Click Service and App Launch",
+  "version": "2.0.2",
+  "license": "MIT",
+  "author": "Deepak Pujari <contact@iamdeepak.io>",
+  "scripts": {
+    "dev": "electron-webpack dev",
+    "compile": "electron-webpack",
+    "dist": "yarn compile && electron-builder",
+    "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null"
+  },
+  "build": {
+    "appId": "io.iamdeepak.quick-toggler",
+    "files": [
+      "assets/**/*"
+    ]
+  },
+  "dependencies": {
+    "source-map-support": "^0.5.9"
+  },
+  "devDependencies": {
+    "electron": "2.0.7",
+    "electron-builder": "^20.28.1",
+    "electron-webpack": "^2.1.2",
+    "webpack": "^4.16.5"
+  },
+  "resolutions": {
+    "upath": "^1.0.5"
+  }
+}
