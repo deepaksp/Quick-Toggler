@@ -14,16 +14,19 @@ What it does ?:
 
 ## How to Install
 
-Download [Quick Toggler-v1](https://drive.google.com/open?id=1X2R4pmHtlgf_Ioxe_JA8M3H96XsRM72q) App
+Download [Quick Toggler](https://github.com/deepaksp/Quick-Toggler/releases) App and install like normal exe file.
  
-Copy entries.json (from dist/entries.json) from here github (if you don't, app will thrown an error):
+You Need to add entries.json (download from dis/entries.json ) in your user dir (c:/username/entries.json)
+[Otherwise app will throw an error]
 
+## For Shortcut [Startup Run]
+To run at startup copy quick toggler shortcut exe inside startup folder
+(C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp)
 
 ## To do / Note
 
 will post more about how to write entries for now please refer entries.json.
 (covers everything)
-
 entries.json needs to be valid json
 
 
